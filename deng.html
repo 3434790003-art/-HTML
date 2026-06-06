@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///D:/%E7%AE%80%E5%8E%86/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, print-scale: 1.0">
+    <meta name="description" content="邓桂花 - 环境工程专业简历，求职实习岗位，一页纸左右版式含照片">
+    <title>邓桂花 · 环境工程实习生简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eef2f5;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            line-height: 1.45;
+            color: #1e2a3a;
+            padding: 32px 24px;
+        }
+
+        /* 下载按钮容器 */
+        .download-area {
+            max-width: 1050px;
+            margin: 0 auto 16px auto;
+            text-align: right;
+        }
+        .btn-download {
+            background-color: #2c6e8f;
+            border: none;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+            font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-download:hover {
+            background-color: #1a5572;
+        }
+
+        /* 简历卡片容器 */
+        .resume {
+            max-width: 1050px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* 左右版图 */
+        .resume-grid {
+            display: grid;
+            grid-template-columns: 34% 66%;
+        }
+
+        /* ========= 左侧样式 ========= */
+        .sidebar {
+            background: #f8fafc;
+            border-right: 1px solid #e2edf2;
+            padding: 2rem 1.5rem;
+            height: 100%;
+        }
+
+        /* 照片区域 */
+        .photo-wrapper {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .photo-frame {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto;
+            background: #e2edf2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border: 2px solid white;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* 照片加载失败时的提示 */
+        .photo-error {
+            font-size: 0.7rem;
+            color: #d9534f;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .name {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0c4e6e;
+            letter-spacing: 1px;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .job-tag {
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: #e1ecf4;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            color: #0f5b7a;
+            margin: 0.75rem auto 1.2rem auto;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2c6e8f;
+            margin: 1.4rem 0 0.9rem 0;
+            border-left: 4px solid #3b8db0;
+            padding-left: 0.75rem;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        /* 联系方式、基本信息 - 无图标 */
+        .info-line {
+            display: flex;
+            align-items: baseline;
+            gap: 0.7rem;
+            font-size: 0.85rem;
+            margin-bottom: 0.7rem;
+            color: #2c3f4c;
+            flex-wrap: wrap;
+        }
+        .info-label {
+            font-weight: 600;
+            min-width: 48px;
+            color: #0f5b7a;
+        }
+
+        .basic-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem 0.8rem;
+            background: #ffffffcc;
+            padding: 0.5rem 0;
+            border-radius: 12px;
+        }
+
+        .basic-item {
+            font-size: 0.8rem;
+            color: #1f3b46;
+        }
+
+        .basic-item strong {
+            font-weight: 600;
+            color: #0f5b7a;
+        }
+
+        /* 精简技能列表 */
+        .skill-list {
+            list-style: none;
+            margin-top: 0.3rem;
+            padding-left: 0;
+        }
+        .skill-list li {
+            font-size: 0.85rem;
+            margin-bottom: 0.65rem;
+            line-height: 1.4;
+        }
+
+        .self-eval {
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: #2c3e4e;
+            background: #ffffffc9;
+            padding: 0.8rem;
+            border-radius: 14px;
+            margin-top: 0.3rem;
+        }
+
+        /* ========= 右侧样式 ========= */
+        .main-content {
+            padding: 2rem 2rem 2rem 1.8rem;
+            background: white;
+        }
+
+        .right-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .right-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f5b7a;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid #cbe5ed;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .edu-item {
+            margin-bottom: 1rem;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #1e2f3c;
+            margin-bottom: 0.3rem;
+        }
+
+        .edu-major {
+            font-weight: 700;
+            color: #0c4e6e;
+        }
+
+        .course-list {
+            font-size: 0.8rem;
+            color: #4a6272;
+            margin-top: 0.4rem;
+            line-height: 1.45;
+        }
+
+        .exp-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .exp-title {
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: #1a4b67;
+        }
+
+        .exp-date {
+            font-size: 0.75rem;
+            color: #6c8b9c;
+            background: #f0f4f7;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+        }
+
+        .exp-desc {
+            padding-left: 0.4rem;
+            margin-top: 0.4rem;
+        }
+
+        .exp-desc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .exp-desc li {
+            font-size: 0.84rem;
+            margin-bottom: 0.45rem;
+            line-height: 1.45;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .exp-desc li::before {
+            content: "•";
+            color: #3b8db0;
+            font-weight: bold;
+            font-size: 1rem;
+            position: absolute;
+            left: 0;
+            top: -0.05rem;
+        }
+
+        hr {
+            margin: 0.6rem 0;
+            border: 0;
+            border-top: 1px solid #e2edf2;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .resume {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .sidebar {
+                background: #fafcfd;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .job-tag, .exp-date {
+                background: #eef2f5;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .resume-grid {
+                break-inside: avoid;
+            }
+            .download-area {
+                display: none;
+            }
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 16px;
+            }
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-right: 0;
+                border-bottom: 1px solid #e2edf2;
+            }
+            .main-content {
+                padding: 1.5rem;
+            }
+            .download-area {
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="download-area">
+        <button class="btn-download" id="downloadWordBtn">📄 下载 Word 简历</button>
+    </div>
+
+    <div class="resume" id="resumeContent">
+        <div class="resume-grid">
+            <div class="sidebar">
+                <!-- 照片区域：尝试加载您的照片 -->
+                <div class="photo-wrapper">
+                    <div class="photo-frame">
+                        <img id="profilePhoto" src="./邓桂花 · 源泉实习生简历_files/证件照-副本.jpg" alt="邓桂花证件照" onerror="this.onerror=null; this.style.display=&#39;none&#39;; document.getElementById(&#39;photoErrorMsg&#39;).style.display=&#39;block&#39;;">
+                    </div>
+                    <div id="photoErrorMsg" style="display: none; font-size: 0.7rem; color: #c0392b; text-align: center; margin-top: 0.5rem;">
+                        ⚠️ 未找到照片，请将文件 "证件照-副本.jpg" 放在本HTML文件同目录下
+                    </div>
+                </div>
+
+                <div class="name">邓桂花</div>
+                <div class="job-tag" style="margin-left: auto; margin-right: auto;">🌱 环境工程实习生</div>
+
+                <div class="section-title">联系方式</div>
+                <div class="info-line">
+                    <span class="info-label">电话</span> <span>186 9685 4721</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">邮箱</span> <span>23ghdeng@stu.edu.cn</span>
+                </div>
+                
+                <div class="section-title">基本信息</div>
+                <div class="basic-info-grid">
+                    <div class="basic-item"><strong>民族</strong><br>汉族</div>
+                    <div class="basic-item"><strong>籍贯</strong><br>重庆市</div>
+                    <div class="basic-item"><strong>出生年月</strong><br>2005.07</div>
+                    <div class="basic-item"><strong>政治面貌</strong><br>共青团员</div>
+                    <div class="basic-item"><strong>毕业院校</strong><br>汕头大学</div>
+                    <div class="basic-item"><strong>学历</strong><br>本科</div>
+                </div>
+
+                <div class="section-title">专业技能</div>
+                <ul class="skill-list">
+                    <li>办公软件：Word / Excel 数据处理、报表统计、公文排版</li>
+                    <li>工程制图：CAD 基础制图与识图</li>
+                    <li>数据分析：PyCharm / Python 数据建模、拟合分析；C语言基础</li>
+                    <li>实验操作：水污染控制实验、环境微生物基础、生态学实验设计</li>
+                    <li>语言能力：普通话二级甲等，沟通流畅</li>
+                </ul>
+
+                <div class="section-title">自我评价</div>
+                <div class="self-eval">
+                    本人活泼开朗，乐于与人交流，具备良好的理解能力和共情力。在校担任班长、学生助理及项目负责人，锻炼出较强的组织协调与领导能力，善于统筹团队资源、推动任务高效落地。对环境领域充满热情，责任心强，适应力好，期待在实习中持续成长并创造价值。
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="right-section">
+                    <div class="right-title">教育背景</div>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <span class="edu-major">汕头大学 · 环境工程 本科</span>
+                            <span style="font-size:0.8rem; color:#4f7f9a;">2023.09 – 2027.06</span>
+                        </div>
+                        <div class="course-list">
+                            核心主修：水污染控制工程、大气污染控制、环境化学、环境微生物、环境生态学、CAD工程制图、C语言
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-title">工作经历</div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">汕头大学化学化工学院 · 学生助理</span>
+                            <span class="exp-date">2023.09 – 2024.09</span>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li>协助辅导员统筹日常行政工作，汇总整理学生信息台账及各类统计报表，运用Excel完成数据分类汇总。</li>
+                                <li>负责学院官网推文图文排版、文稿校对，确保内容准确发布。</li>
+                                <li>对接校内各科室教师，协调通知传达，落地日常对接事务，保障信息高效流通。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">化学化工学院学生会 · 活动统筹骨干</span>
+                            <span class="exp-date">2023.09 – 2024.09</span>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li>协助统筹学院秋季运动会筹备工作，负责运动员报名统计、信息录入及资格审查。</li>
+                                <li>统筹赛事现场工作，分配赛场后勤、检录人员，跟进长跑、田赛等项目赛程，协调突发问题，保障运动会顺利完成。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">2023级环境工程班 · 班长</span>
+                            <span class="exp-date">2023.09 – 至今</span>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li>统筹班级日常管理，对接辅导员传达教务、评奖评优等通知，高效统计汇总班级各项信息。</li>
+                                <li>独立策划组织学业互助、团建等班级活动，统筹场地、人员分工及流程，提升班级凝聚力。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="right-title">科研 · 项目经历</div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <span class="exp-title">国家级大学生创新创业训练计划 · 项目负责人</span>
+                            <span class="exp-date">2025.04 – 2026.04</span>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li><strong>项目名称：</strong>“微塑料的浓度与种类对海洋贻贝累积行为的影响”</li>
+                                <li>负责项目整体统筹规划与组员分工，合理分配任务，推动各阶段关键节点进展，协调团队共同完成立项申报书及结项报告书的撰写与整合。</li>
+                                <li>主导微塑料-贻贝动力学对照实验，使用 PyCharm 完成实验数据建模与拟合分析，系统整理原始数据，形成科学结论。</li>
+                                <li>组织开题、中期及结项全流程答辩，展示研究成果，项目获学院积极评价。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section" style="margin-bottom: 0;">
+                    <div class="right-title">综合能力</div>
+                    <div class="exp-desc">
+                        <ul>
+                            <li>团队协作与沟通：多次组织院级/班级活动，善于跨部门协调与资源调配。</li>
+                            <li>快速学习能力：能够高效掌握实验方法及数据分析工具，适应新领域挑战。</li>
+                            <li>文档与汇报：熟悉公文写作规范，具备优秀的汇报展示与逻辑梳理能力。</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div style="font-size: 0.75rem; color:#608b9f; margin-top: 0.6rem; text-align: right;">
+                        可随时到岗 · 致力于环境修复与可持续发展
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const downloadBtn = document.getElementById('downloadWordBtn');
+            if (!downloadBtn) return;
+
+            const resumeElement = document.getElementById('resumeContent');
+            
+            let styles = '';
+            const styleNodes = document.querySelectorAll('style');
+            styleNodes.forEach((styleTag) => {
+                styles += styleTag.innerHTML;
+            });
+
+            const docHtml = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>邓桂花_环境工程实习生简历</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        body {
+                            background: white;
+                            padding: 40px 20px;
+                            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+                            line-height: 1.45;
+                            color: #1e2a3a;
+                        }
+                        .resume {
+                            max-width: 1050px;
+                            margin: 0 auto;
+                            background: #ffffff;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            box-shadow: none;
+                            border: 1px solid #e2edf2;
+                        }
+                        .resume-grid {
+                            display: grid;
+                            grid-template-columns: 34% 66%;
+                            width: 100%;
+                        }
+                        .sidebar {
+                            background: #f8fafc;
+                            border-right: 1px solid #e2edf2;
+                            padding: 2rem 1.5rem;
+                        }
+                        .main-content {
+                            padding: 2rem 2rem 2rem 1.8rem;
+                            background: white;
+                        }
+                        .photo-wrapper {
+                            text-align: center;
+                            margin-bottom: 1.5rem;
+                        }
+                        .photo-frame {
+                            width: 130px;
+                            height: 130px;
+                            margin: 0 auto;
+                            background: #e2edf2;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            border: 2px solid white;
+                        }
+                        .photo-frame img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .name {
+                            font-size: 1.9rem;
+                            font-weight: 700;
+                            color: #0c4e6e;
+                            text-align: center;
+                            margin-bottom: 0.4rem;
+                        }
+                        .job-tag {
+                            font-size: 0.9rem;
+                            font-weight: 500;
+                            background: #e1ecf4;
+                            display: inline-block;
+                            padding: 0.2rem 0.8rem;
+                            border-radius: 30px;
+                            color: #0f5b7a;
+                            margin: 0.75rem auto 1.2rem auto;
+                            text-align: center;
+                            width: fit-content;
+                        }
+                        .section-title {
+                            font-size: 1rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #2c6e8f;
+                            margin: 1.4rem 0 0.9rem 0;
+                            border-left: 4px solid #3b8db0;
+                            padding-left: 0.75rem;
+                        }
+                        .info-line {
+                            display: flex;
+                            align-items: baseline;
+                            gap: 0.7rem;
+                            font-size: 0.85rem;
+                            margin-bottom: 0.7rem;
+                        }
+                        .info-label {
+                            font-weight: 600;
+                            min-width: 48px;
+                            color: #0f5b7a;
+                        }
+                        .basic-info-grid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 0.6rem 0.8rem;
+                            background: #ffffffcc;
+                            padding: 0.5rem 0;
+                            border-radius: 12px;
+                        }
+                        .basic-item {
+                            font-size: 0.8rem;
+                            color: #1f3b46;
+                        }
+                        .basic-item strong {
+                            font-weight: 600;
+                            color: #0f5b7a;
+                        }
+                        .skill-list {
+                            list-style: none;
+                            padding-left: 0;
+                        }
+                        .skill-list li {
+                            font-size: 0.85rem;
+                            margin-bottom: 0.65rem;
+                        }
+                        .self-eval {
+                            font-size: 0.85rem;
+                            background: #ffffffc9;
+                            padding: 0.8rem;
+                            border-radius: 14px;
+                        }
+                        .right-title {
+                            font-size: 1.05rem;
+                            font-weight: 700;
+                            color: #0f5b7a;
+                            border-bottom: 3px solid #cbe5ed;
+                            padding-bottom: 0.35rem;
+                            margin-bottom: 1rem;
+                            display: inline-block;
+                        }
+                        .edu-header {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            font-weight: 700;
+                            margin-bottom: 0.3rem;
+                        }
+                        .course-list {
+                            font-size: 0.8rem;
+                            color: #4a6272;
+                            margin-top: 0.4rem;
+                        }
+                        .exp-item {
+                            margin-bottom: 1.2rem;
+                        }
+                        .exp-header {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: baseline;
+                            margin-bottom: 0.3rem;
+                        }
+                        .exp-title {
+                            font-weight: 700;
+                            font-size: 0.92rem;
+                            color: #1a4b67;
+                        }
+                        .exp-date {
+                            font-size: 0.75rem;
+                            color: #6c8b9c;
+                            background: #f0f4f7;
+                            padding: 0.2rem 0.6rem;
+                            border-radius: 20px;
+                        }
+                        .exp-desc ul {
+                            list-style: none;
+                            padding-left: 0;
+                        }
+                        .exp-desc li {
+                            font-size: 0.84rem;
+                            margin-bottom: 0.45rem;
+                            position: relative;
+                            padding-left: 1.2rem;
+                        }
+                        .exp-desc li::before {
+                            content: "•";
+                            color: #3b8db0;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 0;
+                        }
+                        hr {
+                            margin: 0.6rem 0;
+                            border-top: 1px solid #e2edf2;
+                        }
+                        @media print {
+                            body {
+                                padding: 0;
+                            }
+                            .resume {
+                                border: none;
+                            }
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${resumeElement.outerHTML}
+                </body>
+                </html>
+            `;
+
+            downloadBtn.addEventListener('click', () => {
+                const blob = new Blob([docHtml], { type: 'application/msword' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = '邓桂花_环境工程实习简历.doc';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            });
+        })();
+    </script>
+
+</body></html>
